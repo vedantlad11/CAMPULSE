@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories - CAMPULSE Admin</title>
+    <link rel="stylesheet" href="style/manage-categories.css">
+</head>
+<body>
+
+    <nav>
+        <div>
+            <strong>CAMPULSE Admin</strong>
+        </div>
+        <div>
+            <a href="index.html">Home</a> | 
+            <a href="#dashboard">Dashboard</a> | 
+            <a href="#logout">Logout</a>
+        </div>
+    </nav>
+
+    <main class="admin-container">
+        <h1>Manage Event Categories</h1>
+        
+        <form id="categoryForm" class="category-form">
+            <input type="text" id="categoryInput" placeholder="Enter new category name..." required autocomplete="off">
+            <button type="submit" class="btn-add">Add Category</button>
+        </form>
+
+        <table class="category-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Category Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="categoryTableBody"></tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CAMPULSE | NMIMS Event Platform</p>
+    </footer>
+
+    <script src="js/manage-caategories.js"></script>
+</body>
+</html>

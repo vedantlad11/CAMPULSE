@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPULSE - Student Login</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+
+    <nav>
+        <div><strong>CAMPULSE</strong></div>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Student Login</h2>
+            <p>Access your NMIMS event dashboard</p>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="studentId">Student ID / Email</label>
+                    <input type="text" id="studentId" placeholder="e.g., sapId@nmims.edu.in" required>
+                    <div class="error-message" id="idError">Please enter a valid NMIMS email or ID.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <div class="error-message" id="passError">Password must be at least 6 characters.</div>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CAMPULSE | NMIMS Event Platform</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

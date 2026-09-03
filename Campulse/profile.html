@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPULSE - Student Profile</title>
+    <link rel="stylesheet" href="style/profile.css">
+</head>
+<body>
+
+    <nav>
+        <div><strong>CAMPULSE</strong></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#" class="logout-btn" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="avatar-placeholder" id="avatarInitials">RS</div>
+            <div class="profile-title">
+                <h2 id="studentName">Rohan Sharma</h2>
+                <p id="studentEmail">rohan.sharma@nmims.edu.in</p>
+            </div>
+        </div>
+
+        <div class="profile-body">
+            <div class="section-title">Academic Details</div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <label>SAP ID</label>
+                    <span id="sapId">70272200123</span>
+                </div>
+                <div class="info-item">
+                    <label>School / Program</label>
+                    <span id="program">B.Tech - Computer Engineering</span>
+                </div>
+                <div class="info-item">
+                    <label>Year / Semester</label>
+                    <span id="semester">Year 3 / Sem 6</span>
+                </div>
+            </div>
+
+            <div class="section-title">Registered Events</div>
+            <div class="event-list">
+                <div class="event-card">
+                    <div class="event-info">
+                        <h4>Technical Workshop: AI & Machine Learning</h4>
+                        <p>Date: March 15, 2026 | Location: Lab 402</p>
+                    </div>
+                    <span class="status-badge">Registered</span>
+                </div>
+                <div class="event-card">
+                    <div class="event-info">
+                        <h4>Cultural Fest: Battle of Bands</h4>
+                        <p>Date: March 22, 2026 | Location: Main Auditorium</p>
+                    </div>
+                    <span class="status-badge">Registered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CAMPULSE | NMIMS Event Platform</p>
+    </footer>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

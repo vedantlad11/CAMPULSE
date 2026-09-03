@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav div strong {
+    font-size: 1.5rem;
+    color: #d60000;
+    letter-spacing: 1px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav div a:hover {
+    color: #d60000;
+}
+
+.admin-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border-top: 6px solid #d60000;
+}
+
+.admin-container h1 {
+    font-size: 2rem;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.category-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.category-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.category-form input:focus {
+    border-color: #d60000;
+}
+
+.btn-add {
+    background-color: #d60000;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-add:hover {
+    background-color: #8a0000;
+}
+
+.category-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.category-table th, .category-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.category-table th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+}
+
+.category-table td {
+    color: #212529;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #a71d2a;
+}
+
+.empty-state {
+    text-align: center;
+    color: #6c757d;
+    padding: 20px;
+    font-style: italic;
+}
+
+footer {
+    background-color: #212529;
+    color: #adb5bd;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPULSE - Edit Student Profile</title>
+    <link rel="stylesheet" href="style/edit-profile.css">
+</head>
+<body>
+
+    <nav>
+        <div><strong>CAMPULSE</strong></div>
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Home</a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-card">
+            <h2>Student Profile Configuration</h2>
+            <p>Update your personal information and academic preferences</p>
+            
+            <div class="success-banner" id="successBanner">Profile updated successfully!</div>
+
+            <form id="profileForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" value="Rohan Sharma" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">NMIMS Email</label>
+                        <input type="email" id="email" value="rohan.sharma@nmims.edu.in" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sapId">SAP ID</label>
+                        <input type="text" id="sapId" value="70272200123" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" value="+91 98765 43210" pattern="[+0-9\s-]{10,15}" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="program">School / Program</label>
+                        <select id="program" required>
+                            <option value="B.Tech - Computer Engineering" selected>B.Tech - Computer Engineering</option>
+                            <option value="B.Tech - Data Science">B.Tech - Data Science</option>
+                            <option value="MBA - Tech">MBA - Tech</option>
+                            <option value="BBA - Branding & Advertising">BBA - Branding & Advertising</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CAMPULSE | NMIMS Event Platform</p>
+    </footer>
+
+    <script src="style/edit-profile.css"></script>
+</body>
+</html>

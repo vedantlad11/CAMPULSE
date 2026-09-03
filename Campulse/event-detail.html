@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Detail - CAMPULSE</title>
+    <link rel="stylesheet" href="style/event-details.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-brand">
+            <strong>CAMPULSE</strong>
+        </div>
+        <div>
+            <a href="index.html">Home</a> | 
+            <a href="index.html#events">Events</a> | 
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+
+    <main class="event-container">
+        <div class="event-header">
+            <h1 id="event-title">Technical Workshop</h1>
+            <div class="event-meta">
+                <span>📅 Date: March 25, 2026</span>
+                <span>⏰ Time: 10:00 AM - 2:00 PM</span>
+                <span>📍 Location: Main Auditorium, NMIMS</span>
+            </div>
+        </div>
+
+        <div class="event-banner">
+            CAMPULSE EVENT
+        </div>
+
+        <div class="event-section">
+            <h2>About The Event</h2>
+            <p id="event-desc">Enhance your technical skills with hands-on coding sessions and expert guidance. Dive deep into modern frameworks, problem-solving techniques, and get a chance to network with peers and industry leaders.</p>
+        </div>
+
+        <div class="event-section">
+            <h2>Prerequisites & Requirements</h2>
+            <p>Participants are requested to bring their own laptops with a modern code editor installed. Prior basic knowledge of programming concepts is recommended.</p>
+        </div>
+
+        <div class="register-box">
+            <button id="registerBtn" class="btn-register">Register for Event</button>
+        </div>
+    </main>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h3>Successfully Registered! 🎉</h3>
+            <p>You have successfully registered for the event. Check your email for further details and passes.</p>
+            <button id="closeModal" class="btn-close">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CAMPULSE | NMIMS Event Platform</p>
+    </footer>
+
+    <script src="js/event-detail.js"></script>
+</body>
+</html>

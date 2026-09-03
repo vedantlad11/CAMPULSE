@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPULSE - Admin Manage Students</title>
+    <link rel="stylesheet" href="style/admin-students.css">
+</head>
+<body>
+
+    <nav>
+        <div><strong>CAMPULSE</strong> Admin</div>
+        <div class="nav-links">
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="admin-events.html">Events</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2>Manage Students</h2>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search by name or SAP ID...">
+        </div>
+
+        <div class="table-card">
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>SAP ID</th>
+                        <th>Student Name</th>
+                        <th>Program</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>70272200123</td>
+                        <td>Rohan Sharma</td>
+                        <td>B.Tech - Computer Engineering</td>
+                        <td>rohan.sharma@nmims.edu.in</td>
+                        <td>
+                            <div class="action-btns">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>70272200145</td>
+                        <td>Ananya Verma</td>
+                        <td>B.Tech - Data Science</td>
+                        <td>ananya.verma@nmims.edu.in</td>
+                        <td>
+                            <div class="action-btns">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>70272200189</td>
+                        <td>Kabir Mehta</td>
+                        <td>MBA - Tech</td>
+                        <td>kabir.mehta@nmims.edu.in</td>
+                        <td>
+                            <div class="action-btns">
+                                <button class="btn btn-edit">Edit</button>
+                                <button class="btn btn-delete">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CAMPULSE | NMIMS Event Platform</p>
+    </footer>
+
+    <script src="js/admin-students.js"></script>
+</body>
+</html>
