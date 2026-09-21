@@ -1,0 +1,362 @@
+/* ==========================================================================
+   Base Styles & Fonts
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Headings, Brand, Navigation, and Button Typography */
+header#home h1,
+section h2,
+section h3,
+.modal-card h3,
+nav ul li a,
+.event-btn,
+.modal-submit-btn,
+header#home a button {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================================================================
+   Navigation Bar (Identical on all pages)
+   ========================================================================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 40px;
+    height: 70px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.nav-logo {
+    height: 52px;
+    max-height: 80%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #800000;
+}
+
+nav ul li a.logout-link {
+    color: #dc3545;
+}
+
+nav ul li a.logout-link:hover {
+    color: #a71d2a;
+}
+
+/* ==========================================================================
+   Hero & Header Banners
+   ========================================================================== */
+
+header#home {
+    background: radial-gradient(circle at center, #8a0000 0%, #4a0000 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+header#home.dash-hero {
+    padding: 60px 20px;
+}
+
+header#home h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header#home p:first-of-type {
+    margin-bottom: 6px;
+}
+
+header#home p {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    opacity: 0.92;
+}
+
+header#home a button {
+    margin-top: 25px;
+    background-color: #ffffff;
+    color: #800000;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header#home a button:hover {
+    background-color: #f1f3f5;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Events Section (Core Card Layout)
+   ========================================================================== */
+
+section#events {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+
+section#events h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #212529;
+}
+
+section#events > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+section#events > div > div {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border-top: 4px solid #800000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#events > div > div:hover {
+    transform: translateY(-5px);
+}
+
+section#events > div > div h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #212529;
+}
+
+section#events > div > div p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 16px;
+}
+
+/* Isolated Button Hover Behavior */
+.event-btn {
+    margin-top: 18px;
+    background-color: transparent;
+    color: #800000;
+    border: 1.5px solid #800000;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    cursor: pointer;
+    align-self: flex-start;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.event-btn:hover {
+    background-color: #800000;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Metadata line matching Dashboard */
+.dash-event-meta {
+    color: #800000 !important;
+    font-weight: 600;
+    font-size: 0.88rem !important;
+    margin-bottom: 8px;
+    flex-grow: 0 !important;
+}
+
+/* ==========================================================================
+   Single Event Details Modifiers
+   ========================================================================== */
+
+section#events.event-single-layout {
+    max-width: 800px;
+}
+
+section#events.event-single-layout > div {
+    grid-template-columns: 1fr;
+}
+
+.event-meta-breakdown {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.event-meta-breakdown p {
+    margin-bottom: 0 !important;
+    color: #495057 !important;
+}
+
+.event-divider {
+    border: none;
+    border-top: 1px solid #e9ecef;
+    margin: 20px 0;
+}
+
+.event-subheading {
+    font-size: 1.15rem !important;
+    margin-bottom: 8px !important;
+}
+
+.event-full-desc {
+    line-height: 1.7;
+    margin-bottom: 25px !important;
+}
+
+.event-cta-container {
+    padding-top: 5px;
+}
+
+/* ==========================================================================
+   Features Section (Why CAMPULSE & Statistics)
+   ========================================================================== */
+
+.features-section {
+    background-color: #ffffff;
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.2rem;
+    color: #212529;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: #fdfdfd;
+    padding: 35px 25px;
+    border-radius: 10px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    color: #800000;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feature-card p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.dash-attendance-section {
+    background-color: #f8f9fa;
+    border-top: 1px solid #eaeaea;
+}
+
+.attendance-tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 8px 0;
+    flex-grow: 0 !important;
+}
+
+.tag-present {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.tag-absent {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    background-color: #212529;
+    color: #adb5bd;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}

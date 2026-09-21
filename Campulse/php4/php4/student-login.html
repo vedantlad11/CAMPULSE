@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - CAMPULSE</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="images/f2-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style3.css">
+</head>
+
+<body class="auth-page-body">
+
+    <!-- Global Navigation matching homepage & signup -->
+    <nav>
+        <a href="index.html" class="nav-brand">
+            <img src="images/f6 - Copy.jpeg" alt="CAMPULSE Logo" class="nav-logo">
+        </a>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="upcoming-events.html">Events</a></li>
+            <li><a href="student-login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Login Card Container -->
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Welcome Back!</h2>
+            <p class="auth-subtitle">Log in to manage your registrations and campus schedule.</p>
+
+            <!-- Status Banner for Feedback -->
+            <div id="status-banner" class="status-banner" style="display: none;"></div>
+
+            <form id="login-form" novalidate>
+                <!-- Email or SAP ID -->
+                <div class="form-group">
+                    <label for="login-identifier">Email / Student ID</label>
+                    <input type="text" id="login-identifier" placeholder="e.g. name@nmims.edu.in or 7001XXXXXXX" required>
+                    <small class="error-msg"></small>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                    <small class="error-msg"></small>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="auth-submit-btn">Login</button>
+
+                <!-- Navigation Link to Sign Up -->
+                <p class="auth-footer-text">
+                    Don't have an account? <a href="student-signup.html">Sign Up here</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <p>&copy; 2026 CAMPULSE | NMIMS Event Platform</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
